@@ -2,3 +2,96 @@
 font-family: 'Gilroy';
 font-family: 'Chronicle';
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gilroy';
+  background-color: #0B1D26;
+  background-image: url("./../img/bg/bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/* BASE */
+
+.test {
+  background-color: red;
+  width: 1px;
+  height: 3000px;
+}
+
+/* HEADER */
+
+.header {
+  width: 1490px;
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+.logo {
+  font-family: 'Chronicle';
+  font-size: 32px;
+}
+
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav li {
+  padding: 0 20px;
+
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s easy-in;
+}
+
+.nav a:hover {
+  color: #FBD784;
+}
+
+.login {
+  position: relative;
+}
+
+.login a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  transition: color 0.8s easy-in;
+}
+
+.login a:hover {
+  color: #FBD784;
+}
+
+.login::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/icons/avatar.svg");
+  background-size: contain;
+}
